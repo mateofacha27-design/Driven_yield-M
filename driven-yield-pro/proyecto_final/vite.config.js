@@ -11,6 +11,7 @@ export default defineConfig({
     }
   },
 
+  // Solo para desarrollo local (yarn dev)
   server: {
     host: 'localhost',
     port: 5173,
@@ -30,4 +31,11 @@ export default defineConfig({
       return false;
     })()
   },
-})
+
+  // Para producción en Render (yarn start): HTTP plano, Render pone el HTTPS
+  preview: {
+    host: '0.0.0.0',
+    https: false,
+    allowedHosts: true
+  }
+});
