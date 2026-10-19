@@ -1,5 +1,6 @@
 {
-  "name": "driven yield-vue",
+  "start": "vite preview --host 0.0.0.0 --port $PORT"
+  ,"name": "driven-yield-vue",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
